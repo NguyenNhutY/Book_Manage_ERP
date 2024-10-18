@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		<!--Books-->
+		<record id="book_01" model="book.book">
+			<field name="name">Dế mèn phiêu lưu ký</field>
+			<field name="pages">250</field>
+			<field name="author">Tô Hoài</field>
+			<field name="genre">Truyện ngắn</field>
+			<field name="published_date">1996/10/13</field>
+			<field name="active">True</field>
+		</record>
+		<record id="book_02" model="book.book">
+			<field name="name">Sóng</field>
+			<field name="pages">125</field>
+			<field name="author">Xuân Quỳnh</field>
+			<field name="genre">Thơ</field>
+			<field name="published_date">1992/02/18</field>
+			<field name="active">False</field>
+		</record>
+	</data>
+</openerp>

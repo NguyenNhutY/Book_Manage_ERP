@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	<!--Book search view-->
+		<record model="ir.ui.view" id="view_book_search">
+			<field name="name">book.search</field>
+			<field name="model">book.book</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search string="Book Information Search">
+					<field name="name" string="Book Name"/>
+					<field name="brand" string="Book Genre"/>
+				</search>
+			</field>
+		</record>
+		
+	<!--Book tree view-->
+		<record model="ir.ui.view" id="view_book_tree">
+			<field name="name">book.tree</field>
+			<field name="model">book.book</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="List of phones">
+					<field name="name"/>
+					<field name="pages"/>
+					<field name="origin of goods"/>
+					<field name="brand"/>
+					<field name="published_date"/>
+					<field name="active"/>
+				</tree>
+			</field>
+		</record>
+	
+	<!--Book form view-->
+		<record model="ir.ui.view" id="view_book_form">
+			<field name="name">book.form</field>
+			<field name="model">book.book</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Book">
+						<field name="name" string="Name:"/>
+						<field name="pages" string="Price:"/>
+						<field name="origin of goods" string="Origin of goods"/>
+						<field name="published_date" string="Published Date:"/>
+						<field name="active" string="Active ?"/>
+						<field name="brand" string="Brand:"/>
+						<field name="notes" string="My Notes" placeholder="Put details of this book..."/>
+				</form>
+			</field>
+		</record>
+		
+	<!--Book Action-->
+		 <record model="ir.actions.act_window" id="action_book">
+            <field name="name">Phone Information</field>
+            <field name="res_model">book.book</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+		
+		 <record model="ir.actions.act_window" id="action_book_tree">
+            <field name="name">Phone Information</field>
+            <field name="res_model">book.book</field>
+            <field name="view_type">tree</field>
+            <field name="view_mode">tree</field>
+        </record>
+	</data>
+</openerp>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	<!--Book Menu-->
+		<menuitem id="book_parent" name="Phone Management" icon="STOCK_OPEN"/>
+		<menuitem id="menu_book_parent" name="Phones" parent="book_parent"/>
+		<menuitem action="action_book" id="menu_book_book" parent="menu_book_parent" string="Result"/>
+		<menuitem action="action_book_tree" name="List of phones" id="menu_book_tree" parent="menu_book_parent" string="List of phones"/>
+	</data>
+</openerp>
